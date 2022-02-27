@@ -26,7 +26,7 @@ export const Gameboard = () => {
 
     setGuesses(guessList);
 
-    if (gameWord?.toLowerCase() == currentGuess.toLowerCase()) {
+    if (gameWord?.toLowerCase() === currentGuess.toLowerCase()) {
       setCorrectGuess(true);
       setGameOver(true);
       setCurrentGuess('');
@@ -52,7 +52,7 @@ export const Gameboard = () => {
       case 2: 
       if (turnNumber > 2) {
         return guesses[1];
-      } else if (turnNumber == 2) {
+      } else if (turnNumber === 2) {
         return currentGuess; 
       } else {
         return '';
@@ -61,7 +61,7 @@ export const Gameboard = () => {
       case 3: 
       if (turnNumber > 3) {
         return guesses[2];
-      } else if (turnNumber == 3) {
+      } else if (turnNumber === 3) {
         return currentGuess; 
       } else {
         return '';
@@ -70,7 +70,7 @@ export const Gameboard = () => {
       case 4: 
       if (turnNumber > 4) {
         return guesses[3];
-      } else if (turnNumber == 4) {
+      } else if (turnNumber === 4) {
         return currentGuess; 
       } else {
         return '';
@@ -79,7 +79,7 @@ export const Gameboard = () => {
       case 5: 
       if (turnNumber > 5) {
         return guesses[4];
-      } else if (turnNumber == 5) {
+      } else if (turnNumber === 5) {
         return currentGuess; 
       } else {
         return '';
