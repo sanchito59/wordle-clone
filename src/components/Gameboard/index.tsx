@@ -48,7 +48,6 @@ export const Gameboard = () => {
       } else {
         return currentGuess;
       }
-      break;
       case 2: 
       if (turnNumber > 2) {
         return guesses[1];
@@ -57,7 +56,6 @@ export const Gameboard = () => {
       } else {
         return '';
       }
-      break;
       case 3: 
       if (turnNumber > 3) {
         return guesses[2];
@@ -66,7 +64,6 @@ export const Gameboard = () => {
       } else {
         return '';
       }
-      break;
       case 4: 
       if (turnNumber > 4) {
         return guesses[3];
@@ -75,7 +72,6 @@ export const Gameboard = () => {
       } else {
         return '';
       }
-      break;
       case 5: 
       if (turnNumber > 5) {
         return guesses[4];
@@ -84,7 +80,6 @@ export const Gameboard = () => {
       } else {
         return '';
       }
-      break;
       default:
         return currentGuess;
     }
